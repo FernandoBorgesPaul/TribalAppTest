@@ -15,7 +15,7 @@ struct User: Decodable {
     let last_name: String?
     let bio: String?
     let profile_image: ProfileImage
-    
+    let location: String?
     
     struct ProfileImage: Decodable {
         let small: String
