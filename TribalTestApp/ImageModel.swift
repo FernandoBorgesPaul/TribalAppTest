@@ -17,6 +17,10 @@ struct ImageModel {
    let urls: String
    let bio: String?
     let location: String
+    let profileImage: String
+    let userTotalLikes: Int
+    let userTotalPhotos: Int
+    let userTotalCollections: Int
 
     
 }
