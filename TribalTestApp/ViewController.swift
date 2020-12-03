@@ -11,7 +11,6 @@ class ViewController: UIViewController {
     
     var photoManager = PhotoManager()
     
-//    var user = [PhotoManager].self
     
     @IBOutlet weak var userPofileImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
@@ -37,7 +36,14 @@ class ViewController: UIViewController {
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCollectionView" {
+            let destVC = segue.destination as! PhotoViewController
+            
+            destVC.photoManager.performRequest()
 
+        }
+    }
 }
 
 extension ViewController: PhotoManagerDelegate {
@@ -58,8 +64,6 @@ extension ViewController: PhotoManagerDelegate {
     func didFailWithError(error: Error) {
         print(error)
     }
-    
-    
 }
 
 extension UIImageView {

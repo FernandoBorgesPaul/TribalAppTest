@@ -9,14 +9,14 @@ import Foundation
 
 
 struct Image: Decodable {
-   let id: String
-   let width: Int
-   let height: Int
-   let color: String
-   let likes: Int
+    let id: String
+    let width: Int
+    let height: Int
+    let color: String
+    let likes: Int
     let user: User
-   let urls: URLS
-   
+    let urls: URLS
+    
     struct URLS: Decodable {
         let raw: String
         let full: String?

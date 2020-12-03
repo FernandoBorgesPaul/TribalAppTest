@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B824C2402577FBAA00B744B6 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C23F2577FBAA00B744B6 /* PhotoViewController.swift */; };
+		B824C2432577FFC300B744B6 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824C2422577FFC300B744B6 /* PhotoCollectionViewCell.swift */; };
 		B87DB27A2572E8AB0099D201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB2792572E8AB0099D201 /* AppDelegate.swift */; };
 		B87DB27C2572E8AB0099D201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB27B2572E8AB0099D201 /* SceneDelegate.swift */; };
 		B87DB27E2572E8AB0099D201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB27D2572E8AB0099D201 /* ViewController.swift */; };
@@ -16,11 +18,12 @@
 		B87DB28F2572E9520099D201 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB28E2572E9520099D201 /* PhotoManager.swift */; };
 		B87DB2932572EB830099D201 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB2922572EB830099D201 /* Image.swift */; };
 		B87DB2972572F1BA0099D201 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB2962572F1BA0099D201 /* User.swift */; };
-		B87DB29E257560F70099D201 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB29D257560F60099D201 /* PhotoCollectionViewCell.swift */; };
 		B87DB2A2257576400099D201 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DB2A1257576400099D201 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B824C23F2577FBAA00B744B6 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		B824C2422577FFC300B744B6 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B87DB2762572E8AB0099D201 /* TribalTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TribalTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87DB2792572E8AB0099D201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87DB27B2572E8AB0099D201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +35,6 @@
 		B87DB28E2572E9520099D201 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		B87DB2922572EB830099D201 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B87DB2962572F1BA0099D201 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B87DB29D257560F60099D201 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B87DB2A1257576400099D201 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +71,6 @@
 				B87DB2792572E8AB0099D201 /* AppDelegate.swift */,
 				B87DB27B2572E8AB0099D201 /* SceneDelegate.swift */,
 				B87DB27D2572E8AB0099D201 /* ViewController.swift */,
-				B87DB29D257560F60099D201 /* PhotoCollectionViewCell.swift */,
 				B87DB28E2572E9520099D201 /* PhotoManager.swift */,
 				B87DB2922572EB830099D201 /* Image.swift */,
 				B87DB2962572F1BA0099D201 /* User.swift */,
@@ -78,6 +79,8 @@
 				B87DB2842572E8AE0099D201 /* LaunchScreen.storyboard */,
 				B87DB2872572E8AE0099D201 /* Info.plist */,
 				B87DB2A1257576400099D201 /* ImageModel.swift */,
+				B824C23F2577FBAA00B744B6 /* PhotoViewController.swift */,
+				B824C2422577FFC300B744B6 /* PhotoCollectionViewCell.swift */,
 			);
 			path = TribalTestApp;
 			sourceTree = "<group>";
@@ -156,7 +159,8 @@
 				B87DB27A2572E8AB0099D201 /* AppDelegate.swift in Sources */,
 				B87DB2972572F1BA0099D201 /* User.swift in Sources */,
 				B87DB28F2572E9520099D201 /* PhotoManager.swift in Sources */,
-				B87DB29E257560F70099D201 /* PhotoCollectionViewCell.swift in Sources */,
+				B824C2402577FBAA00B744B6 /* PhotoViewController.swift in Sources */,
+				B824C2432577FFC300B744B6 /* PhotoCollectionViewCell.swift in Sources */,
 				B87DB27C2572E8AB0099D201 /* SceneDelegate.swift in Sources */,
 				B87DB2932572EB830099D201 /* Image.swift in Sources */,
 				B87DB2A2257576400099D201 /* ImageModel.swift in Sources */,
