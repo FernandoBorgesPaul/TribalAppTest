@@ -20,32 +20,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var userLikes: UILabel!
     @IBOutlet weak var userLocation: UILabel!
     
-    
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         userPofileImage.layer.cornerRadius = CGFloat(userPofileImage.frame.height / 2)
         userPofileImage.clipsToBounds = true
         userPofileImage.contentMode = .scaleAspectFit
-        // Do any additional setup after loading the view.
+        
         photoManager.delegate = self
-       photoManager.performRequest()
+        photoManager.performRequest()
         
     }
-
+    
+    
+    //MARK: - Segue to pass Data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCollectionView" {
             let destVC = segue.destination as! PhotoViewController
             
             destVC.photoManager.performRequest()
-
+            
         }
     }
 }
 
+//MARK: - ViewController Extension
 extension ViewController: PhotoManagerDelegate {
     func didUpdatePhoto(_ photomanager: PhotoManager, photo: ImageModel) {
         DispatchQueue.main.sync {
@@ -66,6 +65,8 @@ extension ViewController: PhotoManagerDelegate {
     }
 }
 
+//MARK: - UIImage Extension
+
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         contentMode = mode
@@ -75,7 +76,7 @@ extension UIImageView {
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
-                else { return }
+            else { return }
             DispatchQueue.main.async() { [weak self] in
                 self?.image = image
             }

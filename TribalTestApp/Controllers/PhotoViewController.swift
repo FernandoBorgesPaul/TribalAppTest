@@ -24,7 +24,8 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        let baseURL = "https://api.unsplash.com/photos/?client_id=REcT8eCrRCAcqRmk8GtBqRicbubSBgt3cbrtjtrlktA"
+        //MARK: - URL Session for Array of Images
+        let baseURL = "https://api.unsplash.com/photos/?client_id=\(photoManager.accessKey)"
        
         let url = URL(string: baseURL)
         URLSession.shared.dataTask(with: url!) {(data, response, error) in
@@ -36,7 +37,6 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
                     print("Parse error")
                 }
                 DispatchQueue.main.async {
-                    print(self.images.count)
                     self.collectionView.reloadData()
                 }
             }
@@ -44,7 +44,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
      
     }
     
-    
+    // MARK: - CollectionView Delegates
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -52,8 +52,7 @@ class PhotoViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCollectionViewCell
         
-//        cell.contentView.frame = cell.bounds
-        cell.photoImageView.downloaded(from: images[indexPath.row].urls.full!)
+        cell.photoImageView.downloaded(from: images[indexPath.row].urls.full!)  // It is better to use the photos in small format to optimize loading time.
 
         return cell
     }

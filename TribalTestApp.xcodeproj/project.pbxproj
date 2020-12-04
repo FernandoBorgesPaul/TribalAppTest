@@ -49,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8340AD5257AE9AF0024693C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B87DB2922572EB830099D201 /* Image.swift */,
+				B87DB2962572F1BA0099D201 /* User.swift */,
+				B87DB2A1257576400099D201 /* ImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8340AD7257AE9CA0024693C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B87DB27F2572E8AB0099D201 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8340AD8257AEA020024693C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B87DB27D2572E8AB0099D201 /* ViewController.swift */,
+				B87DB28E2572E9520099D201 /* PhotoManager.swift */,
+				B824C23F2577FBAA00B744B6 /* PhotoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B87DB26D2572E8AB0099D201 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +98,12 @@
 			children = (
 				B87DB2792572E8AB0099D201 /* AppDelegate.swift */,
 				B87DB27B2572E8AB0099D201 /* SceneDelegate.swift */,
-				B87DB27D2572E8AB0099D201 /* ViewController.swift */,
-				B87DB28E2572E9520099D201 /* PhotoManager.swift */,
-				B87DB2922572EB830099D201 /* Image.swift */,
-				B87DB2962572F1BA0099D201 /* User.swift */,
-				B87DB27F2572E8AB0099D201 /* Main.storyboard */,
+				B8340AD8257AEA020024693C /* Controllers */,
+				B8340AD5257AE9AF0024693C /* Models */,
+				B8340AD7257AE9CA0024693C /* Views */,
 				B87DB2822572E8AE0099D201 /* Assets.xcassets */,
 				B87DB2842572E8AE0099D201 /* LaunchScreen.storyboard */,
 				B87DB2872572E8AE0099D201 /* Info.plist */,
-				B87DB2A1257576400099D201 /* ImageModel.swift */,
-				B824C23F2577FBAA00B744B6 /* PhotoViewController.swift */,
 				B824C2422577FFC300B744B6 /* PhotoCollectionViewCell.swift */,
 			);
 			path = TribalTestApp;
